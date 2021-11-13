@@ -19,7 +19,7 @@ use weather
 db.createCollection("temperature")
 db.temperature.insert({deg:"22",test:"1",val:"2"})
 db.createCollection("humidity")
-db.createCollection("test",{capped:true,size:3})
+db.createCollection("test",{capped:true,size:1024,max:3})
 db.humidity.isCapped() --> false
 db.createCollection("testing",{capped:true,size:3})
 db.testing.isCapped() -->true
