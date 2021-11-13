@@ -16,3 +16,52 @@ Write code to:-
 - delete sports database.
 - check which database you are connected to ?
 - connect to test database
+
+use sports
+show dbs -
+admin   0.000GB
+config  0.000GB
+india   0.000GB
+local   0.000GB
+test    0.000GB
+
+db.createCollection("cricket")
+db.createCollection("football")
+db.createCollection("tt")
+
+db.cricket.insert({name:"sachin",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dhoni",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dravid",age:36,email:"test@gmail.com",bid_price:"100000"})
+
+db.football.insert({name:"ronaldo",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"neymar",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"messi",age:36,email:"test@gmail.com",bid_price:"100000"})
+
+db.tt.insert({name:"test1",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test2",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test3",age:36,email:"test@gmail.com",bid_price:"100000"})
+
+show collections
+db.tt.renameCollection("tennis")
+db.createCollection("khoko",{capped:true,max:3,size:1024})
+db.createCollection("khoko",{capped:true,max:3,size:1024})
+db.tennis.isCapped()
+
+db.cricket.drop({})
+true
+> show collections
+khoko
+tennis
+> db.dropDatabase()
+{ "ok" : 1 }
+> dbs
+uncaught exception: ReferenceError: dbs is not defined :
+@(shell):1:1
+> show dbs
+admin   0.000GB
+config  0.000GB
+india   0.000GB
+local   0.000GB
+test    0.000GB
+> db
+sports
+> db.dropDatabase()
+{ "ok" : 1 }
+> db
+sports
+
+use test
