@@ -14,4 +14,4 @@ Write code to
 
 db.createCollection("india")
 db.getCollectionNames()
-db.getMongo() 
+db.getMongo() or db
