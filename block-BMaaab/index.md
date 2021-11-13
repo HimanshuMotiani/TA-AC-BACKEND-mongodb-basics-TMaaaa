@@ -11,3 +11,7 @@ Write code to
 - create a database of your country name.
 - check list of databases to see newly created database.
 - check which database you are currently connected to ?
+
+db.createCollection("india")
+db.getCollectionNames()
+db.getMongo() 
