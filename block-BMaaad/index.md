@@ -12,3 +12,16 @@ Write code to:-
 - create a simple collection named `humidity`
 - check whether `temperature` collection is capped or not ?
 - Delete `humidity` collection and then the entire database(weather).
+
+
+db.createCollections("pune")
+use weather
+db.createCollection("temperature")
+db.temperature.insert({deg:"22",test:"1",val:"2"})
+db.createCollection("humidity")
+db.createCollection("test",{capped:true,size:3})
+db.humidity.isCapped() --> false
+db.createCollection("testing",{capped:true,size:3})
+db.testing.isCapped() -->true
+db.humidity.drop() -->true
+db.dropDatabase()
