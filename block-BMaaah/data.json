@@ -1,0 +1,51 @@
+// - title as string
+// - createdAt as date
+// - details as String
+// - author as nested object
+//   - author should have
+//     - name
+//     - email
+//     - age
+//     - example author: {name: 'abc', email: 'abc@gmail', age: 25}
+// - tags : Array of strings like ['html', 'css']
+[{
+    "title":"test1",
+    "createdAt":111,
+    "details":"test",
+    "author":{
+        "name":"himanshu",
+        "email":"test1@gmail.com",
+        "age":27
+    },
+    "tags":["html","css"]
+},{
+    "title":"test2",
+    "createdAt":222,
+    "details":"test",
+    "author":{
+        "name":"himanshu",
+        "email":"test2@gmail.com",
+        "age":27
+    },
+    "tags":["html","css"]
+},{
+    "title":"test3",
+    "createdAt":333,
+    "details":"test",
+    "author":{
+        "name":"rohit",
+        "email":"test3@gmail.com",
+        "age":27
+    },
+    "tags":["html","css"]
+},{
+    "title":"test4",
+    "createdAt":444,
+    "details":"test",
+    "author":{
+        "name":"himanshu",
+        "email":"test4@gmail.com",
+        "age":27
+    },
+    "tags":["html","css"]
+}]
