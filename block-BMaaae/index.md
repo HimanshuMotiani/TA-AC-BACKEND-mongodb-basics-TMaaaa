@@ -29,11 +29,11 @@ db.createCollection("cricket")
 db.createCollection("football")
 db.createCollection("tt")
 
-db.cricket.insert({name:"sachin",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dhoni",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dravid",age:36,email:"test@gmail.com",bid_price:"100000"})
+db.cricket.insertMany([{name:"sachin",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dhoni",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"dravid",age:36,email:"test@gmail.com",bid_price:"100000"}])
 
-db.football.insert({name:"ronaldo",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"neymar",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"messi",age:36,email:"test@gmail.com",bid_price:"100000"})
+db.football.insertMany([{name:"ronaldo",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"neymar",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"messi",age:36,email:"test@gmail.com",bid_price:"100000"}])
 
-db.tt.insert({name:"test1",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test2",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test3",age:36,email:"test@gmail.com",bid_price:"100000"})
+db.tt.insertMany([{name:"test1",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test2",age:36,email:"test@gmail.com",bid_price:"100000"},{name:"test3",age:36,email:"test@gmail.com",bid_price:"100000"}])
 
 show collections
 db.tt.renameCollection("tennis")
